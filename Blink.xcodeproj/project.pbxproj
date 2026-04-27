@@ -105,8 +105,8 @@
 		BD55D69C2F7D744B00EE80EA /* TerminalStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D69B2F7D744B00EE80EA /* TerminalStyleTests.swift */; };
 		BD55D6A02F8D000100EE80EA /* StyleCustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D69E2F8D000100EE80EA /* StyleCustomizationView.swift */; };
 		BD55D6A12F8D000100EE80EA /* DisplaySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D69F2F8D000100EE80EA /* DisplaySettingsView.swift */; };
-		BD55D7152F816AFC00EE80EA /* 1860Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7142F816AFC00EE80EA /* 1860Migration.swift */; };
 		BD55D6DC2F7F2F5A00EE80EA /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD55D6DB2F7F2F5A00EE80EA /* DeviceInfo.m */; };
+		BD55D7152F816AFC00EE80EA /* 1860Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7142F816AFC00EE80EA /* 1860Migration.swift */; };
 		BD5A0E3A2F89545B00AB3734 /* 1870Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A0E392F89545B00AB3734 /* 1870Migration.swift */; };
 		BD67FC79272B30F300C1EE75 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67FC78272B30F300C1EE75 /* Messages.swift */; };
 		BD67FC81272DF22700C1EE75 /* BlinkConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCB715E268E1577007D7047 /* BlinkConfig.framework */; };
@@ -173,7 +173,6 @@
 		BDACC7752A6F100D00D0B261 /* TrialNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACC7742A6F100D00D0B261 /* TrialNotification.swift */; };
 		BDB129F32D077EB3006970A1 /* BookmarkedLocationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB129F22D077EB3006970A1 /* BookmarkedLocationsManager.swift */; };
 		BDB129FA2D08B4DE006970A1 /* BookmarkedLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB129F82D08B4DE006970A1 /* BookmarkedLocationsView.swift */; };
-		BDB72CB227A9C08500DCC446 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB72CB127A9C08500DCC446 /* StoreKit.framework */; };
 		BDBA2F842E7A2F310023EB5B /* LayoutConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBA2F832E7A2F310023EB5B /* LayoutConstraintManager.m */; };
 		BDBA46CD2CD2EDD900AB44A0 /* FileProviderReplicatedExtension+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA46CC2CD2EDD300AB44A0 /* FileProviderReplicatedExtension+Helpers.swift */; };
 		BDBFA30D2728914F00C77798 /* BlinkCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBFA3052728914F00C77798 /* BlinkCode.framework */; };
@@ -876,9 +875,9 @@
 		BD55D69B2F7D744B00EE80EA /* TerminalStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalStyleTests.swift; sourceTree = "<group>"; };
 		BD55D69E2F8D000100EE80EA /* StyleCustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCustomizationView.swift; sourceTree = "<group>"; };
 		BD55D69F2F8D000100EE80EA /* DisplaySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySettingsView.swift; sourceTree = "<group>"; };
-		BD55D7142F816AFC00EE80EA /* 1860Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1860Migration.swift; sourceTree = "<group>"; };
 		BD55D6DA2F7F2F5A00EE80EA /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		BD55D6DB2F7F2F5A00EE80EA /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		BD55D7142F816AFC00EE80EA /* 1860Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1860Migration.swift; sourceTree = "<group>"; };
 		BD5A0E392F89545B00AB3734 /* 1870Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1870Migration.swift; sourceTree = "<group>"; };
 		BD67FC78272B30F300C1EE75 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		BD67FC9A2732D4D300C1EE75 /* BackgroundTaskMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskMonitor.swift; sourceTree = "<group>"; };
@@ -933,7 +932,6 @@
 		BDACC7742A6F100D00D0B261 /* TrialNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialNotification.swift; sourceTree = "<group>"; };
 		BDB129F22D077EB3006970A1 /* BookmarkedLocationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedLocationsManager.swift; sourceTree = "<group>"; };
 		BDB129F82D08B4DE006970A1 /* BookmarkedLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedLocationsView.swift; sourceTree = "<group>"; };
-		BDB72CB127A9C08500DCC446 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BDB8BEA726E008190093BF48 /* OwnAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnAlertController.swift; sourceTree = "<group>"; };
 		BDBA2F822E7A2F310023EB5B /* LayoutConstraintManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintManager.h; sourceTree = "<group>"; };
 		BDBA2F832E7A2F310023EB5B /* LayoutConstraintManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintManager.m; sourceTree = "<group>"; };
@@ -1452,7 +1450,6 @@
 				D22277E12A26115300D4C708 /* BlinkSnippets.framework in Frameworks */,
 				B700AED81DD0F2C200100EBF /* CloudKit.framework in Frameworks */,
 				D2334F0425C1C28F00385378 /* tar.xcframework in Frameworks */,
-				BDB72CB227A9C08500DCC446 /* StoreKit.framework in Frameworks */,
 				D2DC5D4B295DB43D007E2B9D /* RevenueCat in Frameworks */,
 				D2A9B2F7272E6F26009FCBDE /* BlinkCode.framework in Frameworks */,
 				D2334EF225C1C28F00385378 /* files.xcframework in Frameworks */,
@@ -1545,7 +1542,6 @@
 				BDE84C762BB33AB800457391 /* xxd.xcframework */,
 				BDE84C502BB233F100457391 /* bc_ios.xcframework */,
 				D2771510287F0EA200D31F4E /* libbuild_cli.a */,
-				BDB72CB127A9C08500DCC446 /* StoreKit.framework */,
 				D248EC542689EAD7009FD817 /* SSHConfig */,
 				D2334ECF25C1C04700385378 /* awk.xcframework */,
 				D2334F0A25C1C3A000385378 /* OpenSSH.xcframework */,
@@ -3433,7 +3429,6 @@
 			files = (
 				BD74A7C22905BD5800ED01CF /* WhatsNewModelTests.swift in Sources */,
 				BDE7C45C29DCAEFA005E033E /* FileLocationPathTests.swift in Sources */,
-				BD9EA217271F846100874007 /* BlinkLogging.swift in Sources */,
 				BD55D69C2F7D744B00EE80EA /* TerminalStyleTests.swift in Sources */,
 				D20CBA4F2360319600D93301 /* NSCoder+CodingKey.swift in Sources */,
 				D243F17E2602438D00097A2F /* XCTestCase.swift in Sources */,
@@ -4288,7 +4283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2H2CL32AG;
+				DEVELOPMENT_TEAM = P8H49ZV7Q2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4349,7 +4344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2H2CL32AG;
+				DEVELOPMENT_TEAM = P8H49ZV7Q2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5308,7 +5303,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2H2CL32AG;
+				DEVELOPMENT_TEAM = P8H49ZV7Q2;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -5360,7 +5355,7 @@
 				CURRENT_PROJECT_VERSION = 1097;
 				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2H2CL32AG;
+				DEVELOPMENT_TEAM = P8H49ZV7Q2;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = Blink/Info.plist;

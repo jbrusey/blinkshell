@@ -33,8 +33,7 @@ import UIKit
 
 class KBAccessoryView: UIInputView {
   private let _kbView: KBView
-  private var _glassEffectView: UIVisualEffectView?
-  
+
   init(kbView: KBView) {
     _kbView = kbView
     super.init(frame: .zero, inputViewStyle: .keyboard)
@@ -42,63 +41,64 @@ class KBAccessoryView: UIInputView {
     allowsSelfSizing = true
 
     self.frame.size.height = _kbView.intrinsicContentSize.height
-    
-    if #available(iOS 26.0, *) {
-      _setupGlassMaterialEffect()
-    } else {
-      // Earlier iOS versions: Add kbView directly to UIInputView
-      addSubview(_kbView)
-    }
+
+    // if #available(iOS 26.0, *) {
+    //   _setupGlassMaterialEffect()
+    // } else {
+    //   // Earlier iOS versions: Add kbView directly to UIInputView
+    //   addSubview(_kbView)
+    // }
+    addSubview(_kbView)
 
     _kbView.translatesAutoresizingMaskIntoConstraints = false
     let margin: CGFloat = 0.0
-    
-    if #available(iOS 26.0, *) {
-      guard let glassEffectView = _glassEffectView else { return }
-      NSLayoutConstraint.activate([
-        _kbView.leadingAnchor.constraint(equalTo: glassEffectView.contentView.leadingAnchor, constant: margin),
-        _kbView.trailingAnchor.constraint(equalTo: glassEffectView.contentView.trailingAnchor, constant: -margin),
-        //_kbView.topAnchor.constraint(equalTo: glassEffectView.contentView.topAnchor),
-        _kbView.bottomAnchor.constraint(equalTo: glassEffectView.contentView.bottomAnchor)
-      ])
-    } else {
-      NSLayoutConstraint.activate([
-        _kbView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: margin),
-        _kbView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -margin),
-        //_kbView.topAnchor.constraint(equalTo: topAnchor),
-        _kbView.bottomAnchor.constraint(equalTo: bottomAnchor)
-      ])
-    }
+
+    // if #available(iOS 26.0, *) {
+    //   guard let glassEffectView = _glassEffectView else { return }
+    //   NSLayoutConstraint.activate([
+    //     _kbView.leadingAnchor.constraint(equalTo: glassEffectView.contentView.leadingAnchor, constant: margin),
+    //     _kbView.trailingAnchor.constraint(equalTo: glassEffectView.contentView.trailingAnchor, constant: -margin),
+    //     //_kbView.topAnchor.constraint(equalTo: glassEffectView.contentView.topAnchor),
+    //     _kbView.bottomAnchor.constraint(equalTo: glassEffectView.contentView.bottomAnchor)
+    //   ])
+    // } else {
+    NSLayoutConstraint.activate([
+      _kbView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: margin),
+      _kbView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -margin),
+      //_kbView.topAnchor.constraint(equalTo: topAnchor),
+      _kbView.bottomAnchor.constraint(equalTo: bottomAnchor)
+    ])
+    // }
   }
-  
+
   required init?(coder: NSCoder) {
     return nil
   }
-  
-  @available(iOS 26.0, *)
-  private func _createGlassEffect() -> UIGlassEffect {
-    let glassEffect = UIGlassEffect()
-    glassEffect.isInteractive = true
-    
-    glassEffect.tintColor = .systemFill
-    
-    return glassEffect
-  }
-  
+
+//  @available(iOS 26.0, *)
+//  private func _createGlassEffect() -> UIGlassEffect {
+//    let glassEffect = UIGlassEffect()
+//    glassEffect.isInteractive = true
+//
+//    glassEffect.tintColor = .systemFill
+//
+//    return glassEffect
+//  }
+
 //  Commented because I think we can go with a general system setting for now.
 //  Update effect based on keyboard settings.
 //  @available(iOS 26.0, *)
 //  private func _setupKeyboardStyle() {
 //    guard let glassEffectView = _glassEffectView else { return }
-//    
+//
 //    let glassEffect = _createGlassEffect()
-//    
+//
 //
 //    UIView.animate {
 //      glassEffectView.effect = glassEffect
 //    }
 //  }
-//  
+//
 //  private func _setupNotificationObserver() {
 //    NotificationCenter.default.addObserver(
 //      self,
@@ -107,38 +107,38 @@ class KBAccessoryView: UIInputView {
 //      object: nil
 //    )
 //  }
-//  
+//
 //  @objc private func _keyboardStyleDidChange() {
 //    if #available(iOS 26.0, *) {
 //      _setupKeyboardStyle()
 //    }
 //  }
-  
-  @available(iOS 26.0, *)
-  private func _setupGlassMaterialEffect() {
-    let glassEffectView = UIVisualEffectView()
-    glassEffectView.translatesAutoresizingMaskIntoConstraints = false
-    _glassEffectView = glassEffectView
-    
-    let glassEffect = _createGlassEffect()
 
-    glassEffectView.contentView.addSubview(_kbView)
-    
-    addSubview(glassEffectView)
-    
-    NSLayoutConstraint.activate([
-      glassEffectView.leadingAnchor.constraint(equalTo: leadingAnchor),
-      glassEffectView.trailingAnchor.constraint(equalTo: trailingAnchor),
-      glassEffectView.topAnchor.constraint(equalTo: topAnchor),
-      glassEffectView.bottomAnchor.constraint(equalTo: bottomAnchor)
-    ])
-    
-    UIView.animate {
-      glassEffectView.cornerConfiguration = .capsule(maximumRadius: 16)
-      glassEffectView.effect = glassEffect
-    }
-  }
-  
+//  @available(iOS 26.0, *)
+//  private func _setupGlassMaterialEffect() {
+//    let glassEffectView = UIVisualEffectView()
+//    glassEffectView.translatesAutoresizingMaskIntoConstraints = false
+//    _glassEffectView = glassEffectView
+//
+//    let glassEffect = _createGlassEffect()
+//
+//    glassEffectView.contentView.addSubview(_kbView)
+//
+//    addSubview(glassEffectView)
+//
+//    NSLayoutConstraint.activate([
+//      glassEffectView.leadingAnchor.constraint(equalTo: leadingAnchor),
+//      glassEffectView.trailingAnchor.constraint(equalTo: trailingAnchor),
+//      glassEffectView.topAnchor.constraint(equalTo: topAnchor),
+//      glassEffectView.bottomAnchor.constraint(equalTo: bottomAnchor)
+//    ])
+//
+//    UIView.animate {
+//      glassEffectView.cornerConfiguration = .capsule(maximumRadius: 16)
+//      glassEffectView.effect = glassEffect
+//    }
+//  }
+
   override var intrinsicContentSize: CGSize {
     return CGSize(width: -1, height: _kbView.intrinsicContentSize.height)
   }
